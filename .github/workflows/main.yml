@@ -17,3 +17,7 @@ jobs:
           # The Hugo version to download (if necessary) and use. Example: 0.58.2
           # Download (if necessary) and use Hugo extended version. Example: true
           extended: true
+  
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: ls -lahr
