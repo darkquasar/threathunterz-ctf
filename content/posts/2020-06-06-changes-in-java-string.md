@@ -18,7 +18,7 @@ Before 1.7.0_06, `String` has 4 non static field:
 * int count
 * int hash
 
-`Subing.substring` create a String by sharing the original String's internal `char[] value` and setting offset. This saves memory and makes `String.substring` run in a constant time($O(1)$).
+`Subing.substring` create a String by sharing the original string's internal `char[] value` and setting offset. This saves memory and makes `String.substring` run in a constant time($O(1)$).
 Meanwhile, this feature may cause **memory leak**[^1].
 
 [http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java](http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java)
