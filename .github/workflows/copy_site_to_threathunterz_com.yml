@@ -25,11 +25,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          # The Hugo version to download (if necessary) and use. Example: 0.58.2
+          # Download (if necessary) and use Hugo extended version. Example: true
+          extended: true
+  
+      - name: Build Hugo Site
+        run: hugo --minify
 
-      - name: Pushes to another repository
+      # Runs a single command using the runners shell
+      - name: List contents of Public folder
+        run: ls -lahr ./public
+
+      - name: Pushes changes to threathunterz.com
         uses: darkquasar/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
