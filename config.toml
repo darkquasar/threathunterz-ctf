@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://threathunterz.com/challenges"
 languageCode = "en-us"
 title = "Want a little secret?"
 theme = "cactus"
@@ -16,13 +16,13 @@ weight = 1
   googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
-  description = "ThreatHunterz small and funny Capture the Flag challenges for the people :)"
+  description = "ThreatHunterz small and funny, jeopardy-style, Capture the Flag challenges for the people :). I'm gonna be dropping here some challenges every now and then (or perhaps whenever I feel like it, most like it, if I feel like \"now\" and \"then\" are not the right times for these things) [unless of course, \"every now and then\" is \"any now\" and \"any then\", in which case I might feel like updating these challenges _now_, or perhaps _then_]."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = false # show tags overview by default.
   showProjectsList = false # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
+  projectsUrl = "https://github.com/darkquasar/threathunterz-ctf" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
