@@ -40,11 +40,11 @@ jobs:
         run: ls -lahr ./public
 
       - name: Pushes changes to threathunterz.com
-        uses: darkquasar/github-action-push-to-another-repository@main
+        uses: darkquasar/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'resources'
+          source-directory: 'public'
           target-directory: 'static'
           destination-github-username: 'darkquasar'
           destination-repository-name: 'test-repo'
