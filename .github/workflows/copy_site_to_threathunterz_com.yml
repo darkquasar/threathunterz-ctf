@@ -47,5 +47,5 @@ jobs:
           source-directory: 'public'
           target-directory: 'static'
           destination-github-username: 'darkquasar'
-          destination-repository-name: 'test-repo'
-          user-email: darkquasar7@gmail.com
+          destination-repository-name: 'threathunterz.com'
+          user-email: darkquasar@quasarops.com
