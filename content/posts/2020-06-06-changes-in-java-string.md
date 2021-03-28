@@ -1,5 +1,5 @@
 ---
-title: Changes to String in java (from 1.7.0_06)
+title: Using StatiCrypt
 date: 2020-06-06 09:00:00
 tags:
 - Algorithms
@@ -12,10 +12,6 @@ keywords:
 ---
 
 
-Before 1.7.0_06, `String` has 4 non static field:
-* char[] value
-* int[] offset
-* int count
-* int hash
+I've used [staticrypt](https://robinmoisson.github.io/staticrypt/) to encrypt this static page. Try it yourself, it's a fun project.
 
 > Well I guess you found me :) Well done **cyberhunter** -> `flag-4867ucNjXAT5LHZ`
