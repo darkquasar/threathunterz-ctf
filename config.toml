@@ -6,8 +6,13 @@ theme = "cactus"
 # Main menu which appears below site header.
 [[menu.main]]
 name = "Home"
-url = "/"
+url = "https://threathunterz.com"
 weight = 1
+
+[[menu.main]]
+name = "Challenges"
+url = "/"
+weight = 2
 
 [params]
 
